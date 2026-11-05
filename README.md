@@ -5,10 +5,10 @@ An interactive study website for **JSS 1 Digital Technology (First Term, 2025/20
 
 - **8 weekly lessons** covering Weeks 1, 2, 3, 4, 6, 8, 9 and 10, with the full note text, tables and 71 pictures.
 - **Scheme of work** for the term, available as a collapsible table on the Lessons page.
-- **Exam practice quiz** with 102 multiple-choice questions and three modes:
+- **Practice quiz** with 102 multiple-choice questions and three modes:
   - Quick quiz: 10 random questions
   - Practice set: 25 random questions
-  - Full exam: every question, in order
+  - Full Pack: every question, in order
 - **Instant feedback** after each answer, plus a list of missed questions with the correct answers at the end.
 - **Glossary** of key terms with live search.
 - **Progress tracking** (lessons explored and best quiz score) saved in the visitor's browser, with a reset button.
