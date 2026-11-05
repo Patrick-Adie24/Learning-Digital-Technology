@@ -1,4 +1,4 @@
-window.EXAM_QUESTIONS=[
+window.QUESTIONS=[
 {
 "q": "Booting is the process of _____",
 "a": [
