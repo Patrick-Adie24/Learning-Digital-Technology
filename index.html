@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b35">
+<meta name="description" content="Learn with Technology: free JSS 1 Digital Technology lessons, a quick quiz, and a glossary of key computer terms.">
+<meta property="og:title" content="Learn with Technology | Digital Technology">
+<meta property="og:description" content="JSS 1 First Term Digital Technology lessons, quiz and glossary.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2322d3ee'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='900' text-anchor='middle' fill='%2305213b' font-family='Arial'%3EL%3C/text%3E%3C/svg%3E">
+<title>Learn with Technology | Digital Technology</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+<div class="brand"><div class="brand-mark">L</div><div><strong>Learn with Technology</strong><small>Explore. Understand. Create.</small></div></div>
+<nav aria-label="Main navigation">
+<div class="nav-label">Workspace</div>
+<button class="nav-btn active" data-page="home"><span class="ico">⌂</span> Overview</button>
+<button class="nav-btn" data-page="lessons"><span class="ico">▤</span> Lessons</button>
+<button class="nav-btn" data-page="quiz"><span class="ico">✦</span> Knowledge check</button>
+<button class="nav-btn" data-page="glossary"><span class="ico">Aa</span> Glossary</button>
+<button class="nav-btn" data-page="progress"><span class="ico">◴</span> My progress</button>
+</nav>
+<div class="side-bottom"><small>YOUR LEARNING JOURNEY</small><strong><span id="side-complete">0</span> of <span id="side-total">8</span> lessons explored</strong><div class="mini-track"><span id="side-track"></span></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><div class="topbar-left"><button class="mobile-menu" id="menuBtn" aria-label="Toggle menu">☰</button><div class="crumb">Digital Technology <span class="sep"> / </span> <b id="crumb">Overview</b></div></div><div class="top-actions"><span class="pill">✧ YOUR DIGITAL CLASSROOM</span><div class="avatar">LW</div></div></header>
+
+<section class="page active" id="home">
+<div class="hero"><div class="hero-content"><div class="eyebrow">WELCOME TO YOUR LEARNING SPACE</div><h1>Understand technology.<br><span>Shape the future.</span></h1><p>Discover how computers work, explore the digital world, and build the knowledge to use technology with confidence. Your next big idea starts with one lesson.</p><button class="btn" onclick="go('lessons')">Explore lessons <span>↗</span></button></div><div class="hero-note">DIGITAL TECHNOLOGY&nbsp; / &nbsp;JSS 1</div></div>
+<div class="stats">
+<div class="stat"><div class="stat-top">LESSONS EXPLORED <span class="stat-icon">▤</span></div><strong id="stat-lessons">0/8</strong><small>Keep building your knowledge</small></div>
+<div class="stat"><div class="stat-top">QUIZ SCORE <span class="stat-icon">✦</span></div><strong id="stat-score">--</strong><small>Try a knowledge check</small></div>
+<div class="stat"><div class="stat-top">LEARNING STREAK <span class="stat-icon">⚡</span></div><strong>Let's start</strong><small>Every expert begins somewhere</small></div>
+</div>
+<div class="section-head"><div><div class="eyebrow">YOUR CLASSROOM</div><h2>Choose where to begin</h2></div><p>Tap a card to open its page</p></div>
+<div class="grid">
+<article class="card clickable" tabindex="0" onclick="go('lessons')"><div class="card-icon">💻</div><h3>Explore the lessons</h3><p>Work through the JSS 1 First Term notes, week by week, with pictures and examples.</p><div class="card-foot"><span>8 weekly lessons</span><span class="arrow">↗</span></div></article>
+<article class="card clickable" tabindex="0" onclick="go('quiz')"><div class="card-icon">🧠</div><h3>Test your knowledge</h3><p>Practise with <span data-qcount>102</span> questions from the First Term exam and get instant feedback.</p><div class="card-foot"><span>Quick interactive quiz</span><span class="arrow">↗</span></div></article>
+<article class="card clickable" tabindex="0" onclick="go('glossary')"><div class="card-icon">📚</div><h3>Explore the glossary</h3><p>Get familiar with important computer terms and what they mean.</p><div class="card-foot"><span>Key terms explained</span><span class="arrow">↗</span></div></article>
+</div>
+</section>
+
+<section class="page" id="lessons">
+<div class="eyebrow">THE LEARNING LIBRARY</div>
+<div class="section-head tight"><div><h2>Digital Technology lessons</h2><p>Build your understanding one topic at a time.</p></div><span class="tag">8 LESSONS</span></div>
+<details class="scheme"><summary>View the First Term scheme of work</summary><div class="scheme-box" id="schemeBox"></div></details>
+<div class="grid" id="lessonCards"></div>
+</section>
+
+<section class="page" id="lesson-detail">
+<div class="eyebrow">LESSON ROOM</div>
+<div class="section-head tight"><div><h2 id="lesson-kicker">MODULE 01</h2><p>Read, understand, and mark the lesson as explored.</p></div><button class="btn secondary" onclick="go('lessons')">← All lessons</button></div>
+<div class="lesson-layout"><article class="lesson-main" id="lesson-content"></article><aside class="lesson-side"><h3>Lesson navigation</h3><div id="lesson-nav"></div><div class="callout">💡 <b>Learning tip</b><br>Try explaining each new idea in your own words. If you can teach it, you understand it.</div></aside></div>
+</section>
+
+<section class="page" id="quiz">
+<div class="eyebrow">QUICK KNOWLEDGE CHECK</div>
+<div class="section-head tight"><div><h2>First Term exam practice</h2><p>Choose the best answer. You'll get feedback after each question.</p></div><span class="tag"><span data-qcount>102</span> QUESTIONS</span></div>
+<div class="quiz-box" id="quizBox"></div>
+</section>
+
+<section class="page" id="glossary">
+<div class="eyebrow">THE DIGITAL TECHNOLOGY DICTIONARY</div>
+<div class="section-head tight"><div><h2>Words worth knowing</h2><p>Search the key terms and get a simple explanation.</p></div></div>
+<input class="search" id="glossarySearch" type="search" aria-label="Search glossary" placeholder="⌕ Search a term, e.g. CPU, data, software...">
+<div class="card flush" id="glossaryList"></div>
+</section>
+
+<section class="page" id="progress">
+<div class="eyebrow">YOUR LEARNING JOURNEY</div>
+<div class="section-head tight"><div><h2>Progress dashboard</h2><p>A little progress, consistently made, adds up.</p></div></div>
+<div class="stats"><div class="stat"><div class="stat-top">LESSONS EXPLORED</div><strong id="progress-lessons">0/8</strong><small>Modules opened and completed</small></div><div class="stat"><div class="stat-top">BEST QUIZ SCORE</div><strong id="progress-score">--</strong><small>Your best attempt so far</small></div><div class="stat"><div class="stat-top">COURSE COMPLETION</div><strong id="progress-percent">0%</strong><small>Based on lessons explored</small></div></div>
+<div class="section-head"><div><h2>Module checklist</h2><p>Your explored lessons appear here.</p></div><button class="btn secondary" onclick="resetProgress()">Reset progress</button></div>
+<div class="card" id="progress-list"></div>
+</section>
+<div class="footer">LEARN WITH TECHNOLOGY · DIGITAL TECHNOLOGY · KEEP EXPLORING</div>
+</main></div>
+<div class="toast" id="toast" role="status" aria-live="polite">Lesson marked as explored!</div>
+<script src="content.js"></script>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
